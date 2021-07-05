@@ -15,6 +15,14 @@ app.use(
   
   app.use(express.json())
 
+  if (process.env.NODE_ENV === "production") {
+    app.use(express.static("build"));
+    app.get("*", (req, res) => {
+      res.sendFile(path.resolve(__dirname,  "build", "index.html"));
+    });
+  }
+
+
 app.post('/sendmail', async (req, res) => {
 
 const information = req.body;
