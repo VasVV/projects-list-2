@@ -18,7 +18,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.2"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
